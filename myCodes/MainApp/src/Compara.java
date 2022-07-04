@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class MainComparacao {
+public class Compara {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
@@ -10,7 +10,7 @@ public class MainComparacao {
         int minutos = sc.nextInt(); // digite um numero
 
         double conta = 50.0;
-        if(minutos > 100){
+        if (minutos > 100) {
             conta += (minutos - 100) * 2.0;
         }
 
@@ -18,4 +18,5 @@ public class MainComparacao {
 
         sc.close();
     }
+
 }
