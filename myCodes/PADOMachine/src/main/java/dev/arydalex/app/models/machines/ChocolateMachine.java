@@ -1,13 +1,11 @@
 package dev.arydalex.app.models.machines;
 
-import dev.arydalex.app.models.products.Coffee;
+import dev.arydalex.app.models.products.Chocolate;
 import dev.arydalex.app.models.products.HotDrink;
 
-public class CoffeeMachine implements HotDrinkMachine {
-    
+public class ChocolateMachine implements HotDrinkMachine {
     @Override
     public HotDrink makeDrink() {
-        return new Coffee();
+        return new Chocolate();
     }
-
 }
