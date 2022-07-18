@@ -36,15 +36,15 @@ public abstract class HotDrink {
         return sugar;
     }
 
-    public void setQuantity(Integer quantity) {
+    protected void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 
-    public void setTemperature(Integer temperature) {
+    protected void setTemperature(Integer temperature) {
         this.temperature = temperature;
     }
 
-    public void setSugar(Integer sugar) {
+    protected void setSugar(Integer sugar) {
         this.sugar = sugar;
     }
 
