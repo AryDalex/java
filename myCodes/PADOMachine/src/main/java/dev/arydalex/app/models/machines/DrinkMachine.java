@@ -26,7 +26,12 @@ public class DrinkMachine {
         while (true)
         {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            int valor = Integer.parseInt(reader.readLine());
+
+            int valor;
+            String line = reader.readLine();
+
+            valor = (!line.equalsIgnoreCase("")) ? Integer.parseInt(line) : 99;
+
             System.out.println("Valor informado pelo usuário: " + valor);
             if(valor < machines.size() && valor >= 0) {
                 HotDrink hotDrink = this.machines.get(valor).makeDrink();
